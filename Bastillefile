@@ -15,6 +15,7 @@ CMD sysrc -f periodic.conf daily_clean_tmps_enable="YES"
 CMD sysrc -f periodic.conf daily_clean_tmps_dirs='${daily_clean_tmps_dirs} /usr/obj'
 CMD sysrc -f periodic.conf daily_clean_tmps_days=7
 
+CP src.conf /etc
 CP build.sh /root
 CP cron /root
 CP nginx.conf /usr/local/etc/nginx/
