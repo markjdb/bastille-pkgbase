@@ -6,6 +6,8 @@ MODLIST="drm/i915 drm/dmabuf drm/drm drm/ttm drm/linuxkpi_video re"
 
 cd /root/kmod/drm
 git pull
+cd /root/kmod/re
+git pull
 cd /root/ports
 git pull
 cd /root/freebsd
