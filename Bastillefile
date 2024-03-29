@@ -5,7 +5,7 @@ ARG _PKGBASE_PORTS_SRC=/root/ports
 ARG _PKGBASE_KMOD_SRC=/root/kmod
 
 CMD git clone https://git.freebsd.org/src.git ${_PKGBASE_FREEBSD_SRC}
-CMD mkdir -p _PKGBASE_KMOD_SRC
+CMD mkdir -p ${_PKGBASE_KMOD_SRC}
 CMD git clone https://github.com/freebsd/drm-kmod ${_PKGBASE_KMOD_SRC}/drm
 CMD git clone https://github.com/alexdupre/rtl_bsd_drv ${_PKGBASE_KMOD_SRC}/re
 CMD git clone https://git.freebsd.org/ports.git ${_PKGBASE_PORTS_SRC}
